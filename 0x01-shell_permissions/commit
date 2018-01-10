@@ -27,12 +27,12 @@ git add $filename
 git commit -m "$comment"
 git push
 
-echo "*********"
+echo "\n\n*********"
 #display number of lines
 echo "Line number check:"                                                                                              
 wc -l $filename
 
-echo "*********"
+echo "\n\n*********"
 #check if file is executable
 if [[ -x "$filename" ]]
 then
@@ -40,3 +40,4 @@ then
 else
     echo "File '$filename' is not executable or found"
 fi
+echo "\n\n"
