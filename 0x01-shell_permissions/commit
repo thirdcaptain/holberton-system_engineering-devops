@@ -44,7 +44,7 @@ printf "\n**********\n"
 echo "Line number check:"                                                                                              
 wc -l $filename
 
-printf "\n\n**********\n"
+printf "\n**********\n"
 #check if file is executable
 if [[ -x "$filename" ]]
 then
