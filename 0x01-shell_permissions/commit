@@ -8,7 +8,7 @@
 ##
 ##Last Update 20180110
 ##
-##https://github.com/thirdcaptain/holberton-system_engineering-devops/tree/master/0x01-shell_permissions
+##https://github.com/thirdcaptain/holberton-system_engineering-devops/blob/master/0x01-shell_permissions/commit
 
 filename="$1"
 echo "Filename is: "$filename
