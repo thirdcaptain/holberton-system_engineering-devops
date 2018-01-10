@@ -11,12 +11,19 @@
 ##https://github.com/thirdcaptain/holberton-system_engineering-devops/blob/master/0x01-shell_permissions/commit
 
 filename="$1"
+if [ -z "$filename" ]
+    then
+    printf "\n********\n"
+    printf "File not found, add a file name!\n\n"
+    exit
+fi
 echo "Filename is: "$filename
 
 comment="$2"
 if [ -z "$comment" ]
 then
-    echo "Commit comment not found"
+    printf "\n********\n"
+    printf "Commit comment not found, add a commit comment!\n\n"
     exit
 fi
 echo "Commit comment is: "$comment
@@ -32,12 +39,12 @@ git add $filename
 git commit -m "$comment"
 git push
 
-printf "\n\n**********"
+printf "\n**********\n"
 #display number of lines
 echo "Line number check:"                                                                                              
 wc -l $filename
 
-printf "\n\n**********"
+printf "\n\n**********\n"
 #check if file is executable
 if [[ -x "$filename" ]]
 then
@@ -45,4 +52,4 @@ then
 else
     echo "File '$filename' is not executable or found"
 fi
-printf "\n\n"
+printf "\n"
