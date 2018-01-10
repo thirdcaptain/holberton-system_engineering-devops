@@ -10,6 +10,7 @@
 ##
 ##https://github.com/thirdcaptain/holberton-system_engineering-devops/blob/master/0x01-shell_permissions/commit
 
+#gets and checks for first argument, filename
 filename="$1"
 if [ -z "$filename" ]
     then
@@ -19,6 +20,7 @@ if [ -z "$filename" ]
 fi
 echo "Filename is: "$filename
 
+#gets and checks for second argument, commit comment
 comment="$2"
 if [ -z "$comment" ]
 then
@@ -28,13 +30,10 @@ then
 fi
 echo "Commit comment is: "$comment
 
-#display number of lines
-#wc -l $filename
-
 #make file executable
 chmod u+x $filename
 
-#add file, commit, and push to git
+#git add file, git commit file, and push to git
 git add $filename
 git commit -m "$comment"
 git push
