@@ -16,4 +16,8 @@
 	script executes "ls -la" command to display current directory contents, including hidden files (starting with .) using the long format.
 
 5-listfilesdigitonly
-	script executes "ls -na" command to Display current directory contents in Long format with user and group IDs displayed numerically And hidden files (starting with .)
+	script executes "ls -l -n -a" command to Display current directory contents in Long format with user and group IDs displayed numerically And hidden files (starting with .)
+
+6-firstdirectory
+	script executes "mkdir /tmp/holberton" command to create a directory named holberton in the /tmp/ directory.
+
