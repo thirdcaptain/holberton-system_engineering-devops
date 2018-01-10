@@ -27,12 +27,12 @@ git add $filename
 git commit -m "$comment"
 git push
 
-echo "*******"
+echo "*********"
 #display number of lines
 echo "Line number check:"                                                                                              
 wc -l $filename
 
-echo "*******"
+echo "*********"
 #check if file is executable
 if [[ -x "$filename" ]]
 then
