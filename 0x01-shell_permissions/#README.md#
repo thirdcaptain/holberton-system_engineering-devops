@@ -42,4 +42,5 @@
 12-directory_permissions
 	script executes "mkdir -m 751 dir_holberton" that creates a directory called dir_holberton with permissions 751 in the working directory
 
-13-
+13-change_group
+	script executes

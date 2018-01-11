@@ -1,0 +1,27 @@
+#!/bin/bash -e
+## Script to make file executable, streamline git commits, and check lines for Holberton systems projects
+##
+##Usage: ./commit <FILENAME> "<COMMIT COMMENT>" 
+##
+##Isaac Wong
+##20180110
+##
+##Last Update 20180110
+##
+##https://github.com/thirdcaptain/holberton-system_engineering-devops/tree/master/0x01-shell_permissions
+
+filename="$1"
+echo "Filename is: "$filename
+
+comment="$2"
+echo "Commit comment is: "$comment
+
+wc -l $filename
+chmod u+x $filename
+git add $filename
+git commit -m "$comment"
+git push
+
+
+
+
