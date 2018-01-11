@@ -42,4 +42,21 @@
 12-directory_permissions
 	script executes "mkdir -m 751 dir_holberton" that creates a directory called dir_holberton with permissions 751 in the working directory
 
-13-
+13-change_group
+	script executes "chgrp holberton hello" that changes the group owner to holberton for the file hello
+
+14-change_owner_and_group
+	script executes "chown betty:holberton *" that changes the owner to betty and the group owner to holberton for all the files and directories in the working directory
+
+15-symbolic_link_permissions
+	script executes "chown -h betty:holberton _hello" 
+
+16-if_only
+	script executes "chown --from=guillaume betty hello" that changes the owner of the file hello to betty only if it is owned by the user guillaume
+
+100-Star_Wars
+	script executes "telnet towel.blinkenlights.nl" that will play the StarWars IV episode in the terminal
+
+101-man_holberton
+	file executes man page using command "man ./101-man_holberton"
+
