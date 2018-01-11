@@ -58,5 +58,5 @@
 	script executes "telnet towel.blinkenlights.nl" that will play the StarWars IV episode in the terminal
 
 101-man_holberton
-	file executes man page using command "man ./101-man_holberton"
+	file executes a copy of holberton example man page using command "man ./101-man_holberton"
 
