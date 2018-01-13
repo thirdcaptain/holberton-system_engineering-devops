@@ -1,0 +1,7 @@
+# Ignore emacs autosave~ and #modified# files
+*~
+**/*~
+**/\#*
+
+# Ignore template files
+**/template
