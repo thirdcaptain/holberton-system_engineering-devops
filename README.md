@@ -5,3 +5,6 @@
 
 20180110 - Day 2
  0x01. Shell, permissions
+
+20180123 - Day 4
+ 0x02. Shell, I/O Redirections and filters
