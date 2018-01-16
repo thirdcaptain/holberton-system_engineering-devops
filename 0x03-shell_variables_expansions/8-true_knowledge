@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" TRUEKNOWLEDGE=$(($TRUEKNOWLEDGE+128))
+echo $((TRUEKNOWLEDGE+128))
