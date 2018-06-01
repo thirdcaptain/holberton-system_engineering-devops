@@ -8,3 +8,10 @@
 
 20180123 - Day 4
  0x02. Shell, I/O Redirections and filters
+
+20180115
+ 0x03. Shell Variables and Expansions
+
+20180601 - Day 99
+ 0x04. Loops, conditions, and parsing
+
