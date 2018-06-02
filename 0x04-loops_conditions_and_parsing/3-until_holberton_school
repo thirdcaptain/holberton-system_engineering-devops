@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Script displays Holberton School 10 times using a until loop
+
+count=10
+until ((count == 0))
+do
+	echo "Holberton School"
+	((count--))
+done
