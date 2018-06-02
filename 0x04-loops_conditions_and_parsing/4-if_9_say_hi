@@ -7,6 +7,6 @@ do
     echo "Holberton School"
     if ((i == 9))
 	then
-	echo "9"
+	echo "Hi"
     fi
 done
