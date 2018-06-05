@@ -2,7 +2,15 @@
 #Script displays Holberton School 10 times using while loop
 
 counter=0
-while ((counter < 10)); do
+while ((counter < 10))
+do
     echo "Holberton School"
     ((counter++))
 done
+
+#COUNTER=0
+#while [ $COUNTER -lt 10 ]
+#do
+#    echo "Holberton School"
+#    (( COUNTER+=1 ))
+#done
