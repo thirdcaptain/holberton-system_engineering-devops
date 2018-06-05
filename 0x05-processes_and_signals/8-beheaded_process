@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#kills process despite SIGTERM catch
+kill -9 "$(pgrep -f 7-highlander)"
