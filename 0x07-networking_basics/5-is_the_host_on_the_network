@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#script pings a host, passed as argument
 address=$1
 if [ "$address" = "" ]
     then
