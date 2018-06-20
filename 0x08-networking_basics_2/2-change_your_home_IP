@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#modifies localhost and adds 8.8.8.8 facebook.com to /etc/hosts
 cp /etc/hosts ~/hosts.new
 sed -i.bak '/localhost/d' ~/hosts.new
 #sed "/localhost/d" /etc/hosts >> ~/hosts.new
