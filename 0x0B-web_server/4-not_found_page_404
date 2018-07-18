@@ -7,5 +7,5 @@ find_string='#error_page 404 \/404.html;'
 redirect_string='error_page 404 \/404.html;'
 sudo sed -i "s/$find_string/$redirect_string/" /etc/nginx/sites-available/default
 sudo touch /usr/share/nginx/html/404.html
-sudo echo "Ceci n'est pas une page" |sudo tee /usr/share/nginx/html/404.html
+sudo echo -e "Ceci n'est pas une page\n" |sudo tee /usr/share/nginx/html/404.html
 sudo service nginx restart
