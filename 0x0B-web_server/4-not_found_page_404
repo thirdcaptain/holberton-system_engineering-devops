@@ -4,8 +4,7 @@ sudo apt-get update -y
 sudo apt-get install nginx -y
 sudo bash -c 'echo "Holberton School" > /usr/share/nginx/html/index.html'
 find_string='# Only for nginx-naxsi'
-redirect_string='\
-        location \/redirect_me {\
+redirect_string='location \/redirect_me {\
                 return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\
 }\n\
 # Only for nginx-naxsi'
