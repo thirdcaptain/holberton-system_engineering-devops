@@ -1,17 +1,25 @@
 #!/usr/bin/env bash
 # Install and configure nginx server with basic homepage and custom 404 error page
+
+# Install server
 sudo apt-get update -y
 sudo apt-get install nginx -y
+
+# Customize index
 sudo bash -c 'echo "Holberton School" > /usr/share/nginx/html/index.html'
+
+# Redirect /redirect_me page
 find_string='# Only for nginx-naxsi'
-redirect_string='location \/redirect_me {\
-                return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\
-}\n\
-# Only for nginx-naxsi'
+redirect_string='location \/redirect_me {\n                return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\n}\n# Only for nginx-naxsi'
 sudo sed -i "s/$find_string/$redirect_string/" /etc/nginx/sites-available/default
+
+# Custom 404 page conf setting
 error404_string='#error_page 404 \/404.html;'
 error404_replace='error_page 404 \/404.html;'
 sudo sed -i "s/$error404_string/$error404_replace/" /etc/nginx/sites-available/default
+
+# Create custom 404 page
 sudo touch /usr/share/nginx/html/404.html
 sudo echo -e "Ceci n'est pas une page\n" |sudo tee /usr/share/nginx/html/404.html
+
 sudo service nginx restart
