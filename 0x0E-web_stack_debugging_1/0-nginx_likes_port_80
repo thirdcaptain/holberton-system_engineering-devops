@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 # Sets web server port number to 80
+FILE="/etc/nginx/sites-available/default"
 
+sudo sed -i "21s/8080/80" $FILE
+sudo sed -i "22s/8080/80" $FILE
+
+sudo service nginx restart
+
+'
 FILE="/etc/nginx/sites-available/default"
 
 LINE1="listen 8080 default_server;"
@@ -18,3 +25,4 @@ sudo sed -i "/$LINE2/d" $FILE
 sudo sed -i "23i$LINE2_NEW" $FILE
 
 sudo service nginx restart
+'
