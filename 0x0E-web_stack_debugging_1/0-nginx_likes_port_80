@@ -7,22 +7,20 @@ sudo sed -i "22s/8080/80" $FILE
 
 sudo service nginx restart
 
-'
-FILE="/etc/nginx/sites-available/default"
+#FILE="/etc/nginx/sites-available/default"
 
-LINE1="listen 8080 default_server;"
-LINE1_NEW="listen 80 default_server;"
+#LINE1="listen 8080 default_server;"
+#LINE1_NEW="listen 80 default_server;"
 
-LINE2="listen \[::\]:8080 default_server"
-LINE2_NEW="listen [::]:80 default_server ipv6only=on;"
+#LINE2="listen \[::\]:8080 default_server"
+#LINE2_NEW="listen [::]:80 default_server ipv6only=on;"
 
 # Replace first default server setting
-sudo sed -i "/$LINE1/d" $FILE
-sudo sed -i "22i$LINE1_NEW" $FILE
+#sudo sed -i "/$LINE1/d" $FILE
+#sudo sed -i "22i$LINE1_NEW" $FILE
 
 # Replace second default server setting
-sudo sed -i "/$LINE2/d" $FILE
-sudo sed -i "23i$LINE2_NEW" $FILE
+#sudo sed -i "/$LINE2/d" $FILE
+#sudo sed -i "23i$LINE2_NEW" $FILE
 
-sudo service nginx restart
-'
+#sudo service nginx restart
