@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # changes user and executes whoami
+if [ -z "$1" ]; then
+whoami
+else
 su - "$1" -c "whoami"
+fi
