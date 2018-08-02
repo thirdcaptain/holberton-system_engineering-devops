@@ -6,7 +6,10 @@
 Answers to multiple choice questions about SSL
 
 ### 1-world_wide_web
-Bash script add www subdomain to point to load balancer ip and add subdomains
+Bash script to print DNS information
 
 ### 2-haproxy_ssl_termination
 HAproxy configuration file configured to accept encrypted traffic for subdomain www
+
+### 100-redirect_http_to_https
+HAproxy configuration file configured to redirect http to https
