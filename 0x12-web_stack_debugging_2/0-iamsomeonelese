@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# changes user and executes whoami
+sudo -u "$1" "whoami"
