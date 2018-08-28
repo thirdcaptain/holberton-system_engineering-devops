@@ -28,10 +28,6 @@ if __name__ == "__main__":
         if todo.get("completed") is True:
             done_tasks = done_tasks + 1
 
-    print(user_name)
-    print(total_tasks)
-    print(done_tasks)
-
     print("Employee {} is done with tasks({}/{}):".format(user_name,
                                                           done_tasks,
                                                           total_tasks))
