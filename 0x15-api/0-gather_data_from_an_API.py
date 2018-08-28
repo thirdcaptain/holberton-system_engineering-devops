@@ -5,9 +5,9 @@ Takes in a given employee ID, returns information about TODO list progress
 """
 
 if __name__ == "__main__":
-    import sys
-    import requests
     import json
+    import requests
+    import sys
 
     userId = sys.argv[1]
     base_url = "https://jsonplaceholder.typicode.com"
