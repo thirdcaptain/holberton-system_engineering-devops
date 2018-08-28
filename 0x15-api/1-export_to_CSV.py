@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Gathers information from https://jsonplaceholder.typicode.com/ RESTFUL API
-Takes in a given employee ID, returns information about TODO list progress
+Takes in a given employee ID, returns info about all task owned by employee
 """
 
 if __name__ == "__main__":
