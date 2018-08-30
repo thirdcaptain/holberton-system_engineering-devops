@@ -15,7 +15,8 @@ def number_of_subscribers(subreddit):
     headers = {'user-agent': 'thirdcaptain'}
 
     try:
-        response = requests.get(url, headers=headers, allow_redirects=False).json()
+        response = requests.get(url, headers=headers,
+                                allow_redirects=False).json()
         child_list = response.get("data").get("children")
         first_child = child_list[0].get("data")
         subs = first_child.get("subreddit_subscribers")
