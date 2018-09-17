@@ -9,6 +9,6 @@ exec { 'edit file':
 }
 
 exec { 'restart nginx':
-  command => "service nginx restart",
+  command => 'service nginx restart',
   path    => [ '/usr/bin/' ]
 }
