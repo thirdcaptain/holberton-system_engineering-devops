@@ -15,3 +15,5 @@ Non-authorized personnel was allowed access to the physical server, and the serv
 
 ### Corrective and Preventative Measures
 Server should be placed in a more secure area so that tampering is reduced. Furthermore, an uninterruptible power supply should be invested in to provide a more robust power source.
+
+Based on a true story.
