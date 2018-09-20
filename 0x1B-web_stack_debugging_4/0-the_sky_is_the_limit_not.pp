@@ -4,11 +4,7 @@ file { $settings:
   ensure => present,
 }
 exec { 'edit file':
-  command => "sed -i 's/15/4000/g' /etc/default/nginx",
+  command => "sed -i 's/15/4000/g' /etc/default/nginx && sudo service nginx restart",
   path    => [ '/bin/' ]
 }
 
-exec { 'restart nginx':
-  command => 'service nginx restart',
-  path    => [ '/usr/sbin/', '/usr/bin' ]
-}
