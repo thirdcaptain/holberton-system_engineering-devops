@@ -4,7 +4,7 @@ file { $settings:
   ensure => present,
 }
 exec { 'edit file':
-  command => "sed -i 's/15/4000/g' ${settings}",
+  command => "sed -i 's/15/4000/g' /etc/default/nginx",
   path    => [ '/bin/' ]
 }
 
