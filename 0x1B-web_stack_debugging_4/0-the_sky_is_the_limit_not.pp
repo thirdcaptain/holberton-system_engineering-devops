@@ -4,7 +4,7 @@ file { $settings:
   ensure => present,
 }
 exec { 'edit file':
-  command => "sed -i 's/15/15000/g' ${settings}",
+  command => "sed -i 's/15/800000/g' ${settings}",
   path    => [ '/bin/' ]
 }
 
