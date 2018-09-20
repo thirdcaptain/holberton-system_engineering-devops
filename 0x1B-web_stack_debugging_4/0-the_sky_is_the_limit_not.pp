@@ -10,5 +10,5 @@ exec { 'edit file':
 
 exec { 'restart nginx':
   command => 'service nginx restart',
-  path    => [ '/usr/bin/' ]
+  path    => [ '/usr/sbin/', '/usr/bin' ]
 }
