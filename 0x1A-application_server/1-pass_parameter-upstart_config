@@ -1,0 +1,13 @@
+# Upstart script that starts Gunicorn to serve web_flask/airbnb-dynamic
+
+description "Gunicorn application server running number_odd_or_even"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+setuid ubuntu
+setgid www-data
+
+chdir /home/ubuntu/AirBnB_clone_v2/
+exec gunicorn --workers 3 --bind 0.0.0.0:8001 web_flask.6-number_odd_or_even:app
